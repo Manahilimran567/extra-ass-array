@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Assignment of Array</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        console.log("step 1");
+var array = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(array);
+var slicedArray = array.slice(1, 4, 7);
+console.log("Sliced array:", slicedArray); 
+
+console.log("step 2");
+var removedElements = array.splice(1, 2, 3, 4);
+console.log("Removed elements:", removedElements); 
+console.log("Original array after splice:", array); 
+
+console.log("step 3");
+var shiftedElement = array.shift();
+console.log("Shifted element:", shiftedElement); 
+console.log("Original array after shift:", array); 
+console.log("step 4");
+array.unshift(6);
+console.log("Array after unshift:", array); 
+
+console.log("step 5");
+array.push(7);
+console.log("Array after push:", array); 
+
+console.log("step 6");
+var poppedElement = array.pop();
+console.log("Popped element:", poppedElement); 
+console.log("Original array after pop:", array); 
+
+console.log("step 7");
+var movedElements = array.slice(0, 2);
+console.log("Moved elements:", movedElements); 
+console.log("Original array after slice:", array); 
+
+console.log("step 8");
+var removedElements2 = array.splice(1, 2);
+console.log("Removed elements:", removedElements2);
+console.log("Original array after splice:", array);
+
+console.log("step 9");
+var shiftedElement1 = array.shift();
+var shiftedElement2 = array.shift();
+console.log("Shifted elements:", shiftedElement1, shiftedElement2); 
+console.log("Original array after shifts:", array);
+
+console.log("step 10");
+array.push(1, 2, 3);
+console.log("Array after multiple push:", array); 
+
+    </script>
+</body>
+</html>
