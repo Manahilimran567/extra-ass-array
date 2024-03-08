@@ -11,54 +11,63 @@
 
     <script>
 
-        console.log("step 1");
+document.write( "<h2>","step 1","</h2>");
 var array = [1, 2, 3, 4, 5, 6, 7];
+document.write(array);
+var slicedArray = array.slice(1, 4);
+document.write("<h5>","Sliced array:","</h5>", slicedArray); 
 
-console.log(array);
-var slicedArray = array.slice(1, 4, 7);
-console.log("Sliced array:", slicedArray); 
+document.write( "<h2>","step 2","</h2>");
+var array1 =[1,2,3,4,5,6,7]
+var removedElements = array1.splice(1, 2, 3, 4);
+document.write("<h5>","Removed elements:","</h5>", removedElements); 
+document.write("<h5>","Original array after splice:","</h5>", array1); 
 
-console.log("step 2");
-var removedElements = array.splice(1, 2, 3, 4);
-console.log("Removed elements:", removedElements); 
-console.log("Original array after splice:", array); 
+document.write( "<h2>","step 3","</h2>");
+var array2 =[1,2,3,4,5,6,7]
+var shiftedElement = array2.shift();
+document.write("<h5>","Shifted element:","</h5>", shiftedElement); 
+document.write("<h5>","Original array after shift:","</h5>", array2); 
 
-console.log("step 3");
-var shiftedElement = array.shift();
-console.log("Shifted element:", shiftedElement); 
-console.log("Original array after shift:", array); 
-console.log("step 4");
-array.unshift(6);
-console.log("Array after unshift:", array); 
+document.write ("<h2>","step 4","</h2>");
+var array3 =[1,2,3,4,5,6,7]
+array3.unshift(0);
+document.write("<h5>","Array after unshift:","</h5>", array3); 
 
-console.log("step 5");
-array.push(7);
-console.log("Array after push:", array); 
+document.write( "<h2>","step 5","</h2>");
+var array4 =[1,2,3,4,5,6,7]
+array4.push(7);
+document.write("<h5>","Array after push:","</h5>", array4); 
 
-console.log("step 6");
-var poppedElement = array.pop();
-console.log("Popped element:", poppedElement); 
-console.log("Original array after pop:", array); 
+document.write( "<h2>","step 6","</h2>");
+var array5 =[1,2,3,4,5,6,7]
+var poppedElement = array5.pop();
+document.write("<h5>","Popped element:","</h5>", poppedElement); 
+document.write("<h5>","Original array after pop:","</h5>", array5); 
 
-console.log("step 7");
-var movedElements = array.slice(0, 2);
-console.log("Moved elements:", movedElements); 
-console.log("Original array after slice:", array); 
+document.write( "<h2>","step 7","</h2>");
+var array6 =[1,2,3,4,5,6,7]
+var movedElements = array6.slice(0, 2);
+document.write("<h5>","Moved elements:","</h5>", movedElements); 
+document.write("<h5>","Original array after slice:","</h5>", array6); 
 
-console.log("step 8");
-var removedElements2 = array.splice(1, 2);
-console.log("Removed elements:", removedElements2);
-console.log("Original array after splice:", array);
+document.write( "<h2>","step 8","</h2>");
+var array6 =[1,2,3,4,5,6,7]
+var removedElements2 = array6.splice(1, 2);
+document.write("<h5>","Removed elements:","</h5>", removedElements2);
+document.write("<h5>","Original array after splice:","</h5>", array6);
 
-console.log("step 9");
-var shiftedElement1 = array.shift();
-var shiftedElement2 = array.shift();
-console.log("Shifted elements:", shiftedElement1, shiftedElement2); 
-console.log("Original array after shifts:", array);
+document.write( "<h2>","step 9","</h2>");
+var array7 =[1,2,3,4,5,6,7]
+var shiftedElement1 = array7.shift();
+var shiftedElement2 = array7.shift();
+document.write("<h5>","Shifted elements:","</h5>", shiftedElement1, shiftedElement2,); 
+document.write("<h5>","Original array after shifts:","</h5>", array7);
 
-console.log("step 10");
-array.push(1, 2, 3);
-console.log("Array after multiple push:", array); 
+document.write( "<h2>","step 10","</h2>");
+var array8 =[1,2,3,4,5,6,7]
+array8.push(1, 2, 3);
+document.write("<h5>","Array after multiple push:","</h5>", array8); 
 
     </script>
 </body>
